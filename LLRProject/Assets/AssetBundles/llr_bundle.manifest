@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 499970957
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2bd132037b1d44d393239e3b69081e08
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d8b1277a41f359a1bb2c9609d12d67cc
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ecaffc43a5d2b1d47858e3fb687e7271, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b03b1445062e71c4ca60f92cbd330aff, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Sprites/Revenant/RevenantAnimations/RevenantHeadAnimation.prefab
+- Assets/Sprites/Items/ItemCollection Data/item material.mat
+- Assets/Sprites/Textures/Icon_Mod.png
+- Assets/Particles/Quick Fire System.prefab
+- Assets/Sprites/Shrine/DanmedShrineCollection Data/DanmedShrineCollection.prefab
+- Assets/Sprites/Revenant/RevenantCollection Data/RevenantCollection.prefab
+- Assets/Sprites/Revenant/RevenantAnimations/RevenantRibsAnimation.prefab
+- Assets/Sprites/Shrine/DanmedShrineCollection Data/damnedshrine material.mat
+- Assets/Sprites/Items/ItemCollection Data/ItemCollection.prefab
+- Assets/Sprites/Revenant/RevenantCollection Data/revenant material.mat
+- Assets/Sprites/Shrine/DamnedShrineAnimation.prefab
+Dependencies: []

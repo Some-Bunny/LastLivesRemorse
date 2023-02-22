@@ -1,0 +1,944 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1218475179432192}
+  m_IsPrefabParent: 1
+--- !u!1 &1218475179432192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4207542785828330}
+  - component: {fileID: 114838968788122914}
+  m_Layer: 0
+  m_Name: DanmedShrineCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4207542785828330
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218475179432192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114838968788122914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218475179432192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b1445062e71c4ca60f92cbd330aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: damnationshrine_idle_001
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.011722656, y: 0.011722656}
+    - {x: 0.19140235, y: 0.011722656}
+    - {x: 0.011722656, y: 0.32421485}
+    - {x: 0.19140235, y: 0.32421485}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: a5c5a937a0728b546a50678967b76669
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_idle_002
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.011722656, y: 0.34766015}
+    - {x: 0.011722656, y: 0.5273398}
+    - {x: 0.32421485, y: 0.34766015}
+    - {x: 0.32421485, y: 0.5273398}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0fc505b9fe6518419bef7d8c1c62769
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_idle_003
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21484765, y: 0.011722656}
+    - {x: 0.21484765, y: 0.19140235}
+    - {x: 0.5273398, y: 0.011722656}
+    - {x: 0.5273398, y: 0.19140235}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3f188f1b9fbf93f48b9e1d8f5642932f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_idle_004
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.34766015, y: 0.21484765}
+    - {x: 0.5273398, y: 0.21484765}
+    - {x: 0.34766015, y: 0.5273398}
+    - {x: 0.5273398, y: 0.5273398}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 21b112873cf348d4199438958fef1b7b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_idle_005
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.011722656, y: 0.5507852}
+    - {x: 0.011722656, y: 0.7304648}
+    - {x: 0.32421485, y: 0.5507852}
+    - {x: 0.32421485, y: 0.7304648}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 471d301307a3ef447a9472b58f462b59
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_001
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.34766015, y: 0.5507852}
+    - {x: 0.34766015, y: 0.7304648}
+    - {x: 0.6601523, y: 0.5507852}
+    - {x: 0.6601523, y: 0.7304648}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 707fd78430f902a4eb0167a9491326dc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_002
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5507852, y: 0.011722656}
+    - {x: 0.7304648, y: 0.011722656}
+    - {x: 0.5507852, y: 0.32421485}
+    - {x: 0.7304648, y: 0.32421485}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e4bc9df09389cb4f9b79588d233a9ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_003
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5507852, y: 0.34766015}
+    - {x: 0.5507852, y: 0.5273398}
+    - {x: 0.8632773, y: 0.34766015}
+    - {x: 0.8632773, y: 0.5273398}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44c991858791a6f42b7e126ed4ce4a66
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_004
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7539102, y: 0.011722656}
+    - {x: 0.9335898, y: 0.011722656}
+    - {x: 0.7539102, y: 0.32421485}
+    - {x: 0.9335898, y: 0.32421485}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 441c64950f684d44285cea7e4ebdc350
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_005
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6835977, y: 0.5507852}
+    - {x: 0.8632773, y: 0.5507852}
+    - {x: 0.6835977, y: 0.8632773}
+    - {x: 0.8632773, y: 0.8632773}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 695459244da220449aa5145597aa1e2f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_006
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.011722656, y: 0.7539102}
+    - {x: 0.011722656, y: 0.9335898}
+    - {x: 0.32421485, y: 0.7539102}
+    - {x: 0.32421485, y: 0.9335898}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 59657e911c10ecf43afc5c427d2cf169
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: damnationshrine_use_007
+    boundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.4375, y: 2.5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    boundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    boundsDataExtents: {x: 2.875, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.4375, y: 2.5, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.875, y: 5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.875, y: 0, z: 0}
+    - {x: 0, y: 5, z: 0}
+    - {x: 2.875, y: 5, z: 0}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 2.875, y: 0, z: 0}
+    position2: {x: 0, y: 5, z: 0}
+    position3: {x: 2.875, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.34766015, y: 0.7539102}
+    - {x: 0.34766015, y: 0.9335898}
+    - {x: 0.6601523, y: 0.7539102}
+    - {x: 0.6601523, y: 0.9335898}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+    materialId: 0
+    sourceTextureGUID: 525d3e407b64f5440ac7f6cf533547ca
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    customColliders: []
+    metadata:
+      type: 0
+      weight: 0
+      dungeonRoomSubType: 0
+      secondRoomSubType: 0
+      thirdRoomSubType: 0
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 0
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 0543f5491539efb439e5da2854c9c9fe, type: 2}
+  textures:
+  - {fileID: 2800000, guid: fc9d64550267d2647b117c5cc13349cd, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: dfbfab3e692813e42b27b17b13827c17
+  spriteCollectionName: DanmedShrineCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 8
+  buildKey: 1631478681
+  dataGuid: 5ce6ac764a1c53944ac33d6229e5e65a
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

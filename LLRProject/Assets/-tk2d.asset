@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
+  m_Name: -tk2d
+  m_EditorClassIdentifier: 
+  version: 4
+  spriteAnimationIndex:
+  - assetGUID: 18a39674a9b14f54b97497254e83b349
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 68cc4da10d501f9439d1507a1a2c46c1
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: eba2002e1b52e457f811082cb3edaa4d
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: ed81c470b29b8b04b91342ef79d33ea9
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: ca11c6980b60f1944bb9cd486e300158
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 18891a7e8bffc2546a2c40af815f1c59
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  fontIndex:
+  - assetGUID: 063b15d80dbb4604d890600a64c79cf8
+    dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
+    managed: 0
+    loadable: 0
+  - assetGUID: 5b9fac241be038041b70ac7e84cd6151
+    dataGUID: 3082bbcb45b417041963b6b8562266c1
+    managed: 0
+    loadable: 0
+  - assetGUID: db60ffa92fa16ea478fc7ad4f595a0e6
+    dataGUID: 44e006873ca04f741b2ac3ba5dec92ad
+    managed: 0
+    loadable: 0
+  - assetGUID: 696edcc0ae48b72449b2be1a439a7afb
+    dataGUID: fb1b97eccf6db514999d1605baf017e5
+    managed: 0
+    loadable: 0
+  - assetGUID: d54d053b1eb9f435ba39d0a7275f7576
+    dataGUID: 00d50654c71944d04960d88e3c352cc1
+    managed: 0
+    loadable: 0
+  - assetGUID: 622b62f4ce4054167ba7243119b7143c
+    dataGUID: dc5e8cfc5fff846d7a573bb8f5960093
+    managed: 0
+    loadable: 0
+  - assetGUID: f6e659f74eb1b461b9ba3f6418086bbb
+    dataGUID: cb3bf0ad5e92744d6856da9a7d5a3125
+    managed: 0
+    loadable: 0
+  spriteCollectionIndex:
+  - name: RevenantCollection
+    spriteCollectionGUID: f4b3332b9d7205a4e9ace950e31f8980
+    spriteCollectionDataGUID: 84339dc7b83b72349954ceb227fc70e3
+    spriteNames:
+    - revenant_head_closed_001
+    - revenant_head_closed_002
+    - revenant_head_closed_003
+    - revenant_head_closed_004
+    - revenant_head_closed_005
+    - revenant_head_closed_006
+    - revenant_head_open_001
+    - revenant_head_open_002
+    - revenant_head_open_003
+    - revenant_head_open_004
+    - revenant_head_open_005
+    - revenant_head_open_006
+    - revenant_head_vert_001
+    - revenant_head_vert_002
+    - revenant_ribs_001
+    - revenant_ribs_002
+    - revenant_ribs_003
+    - revenant_ribs_004
+    - revenant_ribs_005
+    - revenant_ribs_006
+    - revenant_ribs_squeezed_001
+    - revenant_ribs_squeezed_002
+    - revenant_ribs_squeezed_003
+    - revenant_ribs_squeezed_004
+    - revenant_ribs_squeezed_005
+    - revenant_ribs_squeezed_006
+    - revenant_head_spawn_001
+    - revenant_head_spawn_002
+    - revenant_head_spawn_003
+    - revenant_head_spawn_004
+    - revenant_head_spawn_005
+    - revenant_head_spawn_006
+    - revenant_head_spawn_007
+    - revenant_head_spawn_008
+    - revenant_head_spawn_009
+    - revenant_ribs_spawn_001
+    - revenant_ribs_spawn_002
+    - revenant_ribs_spawn_003
+    - revenant_ribs_spawn_004
+    - revenant_ribs_spawn_005
+    - revenant_ribs_spawn_006
+    - revenant_ribs_spawn_007
+    - revenant_head_chargeupleft_003
+    - revenant_head_charge_001
+    - revenant_head_charge_002
+    - revenant_head_charge_003
+    - revenant_head_charge_right_001
+    - revenant_head_charge_right_002
+    - revenant_head_charge_right_003
+    - revenant_head_chargedown_002
+    - revenant_head_chargedown_003
+    - revenant_head_chargedown_001
+    - revenant_head_chargeupleft_001
+    - revenant_head_chargeupleft_002
+    - revenant_head_chargeupright_001
+    - revenant_head_chargeupright_002
+    - revenant_head_chargeupright_003
+    - revenant_head_chargeback_001
+    - revenant_head_chargeback_003
+    - revenant_head_chargeback_002
+    spriteTextureGUIDs:
+    - 97dcdcb01aa90af4b8eeab4986622084
+    - ec088e81bfd69304fa0d435809441d66
+    - 25df99236e9fb6745aa4f8a83e990a9d
+    - 560dc3e9c371ddc4090439124a0586c1
+    - 8bc06a9e9041fda4c89be935163fd65c
+    - 33535a5d8d8d05b439ae2ff4eb870b3a
+    - 35d5b3bcfdff1244a8a99b57c17e57eb
+    - 765d9e7514c67ba45acd1161586d4ccc
+    - 14db896edc9cef343a65a14a86071b21
+    - b9f574e9ff5c43544a78a5f45cc88e82
+    - b04d73a9101e2744dae31521f27903ec
+    - 61c44d47454c860489f99db6374bd477
+    - d56d0ffd97648ce4b96e2127dc7653ed
+    - 7f8b291d7f2da5b4eabd7531481ef334
+    - 9197042b10150cb44b4c4f2404b14ba2
+    - 70b8301e1103a0d48a1d3c486d90cb99
+    - 2ba257a167f83db40b4451c118b79f97
+    - 90150ceace9845745a7bfcf548a499a3
+    - 4c2f20c329741f84dbdf890a24d413a3
+    - 5ee98b96095dfb04ba81cde8532844a6
+    - 8a164ffbd9875a84ca2ae54ead1d6d72
+    - 0b5496eaf83fbdc459f77fabaa376ebb
+    - 46938dd00f0a59b44b827729e9d25e80
+    - 105b3c8417993b74686dfb2bc441324f
+    - c7cde971f2c39fe41a74133b15e71343
+    - e0356526ade5d7847807540e3a62c3ba
+    - c092b73a807b2444799b1aea1f2cc625
+    - d4dd23b95a2b3a1459da3b6779029bfc
+    - 0841db5cbfa1d6a47898425b38a40f71
+    - 15426c68dec3cd0478d1eba66b16d6d0
+    - 668ecc6955378ec4a8323202e458a49e
+    - ce5bb3557f31d784ca7f0f708edd1515
+    - 43a51a1d487cb0c4da94a5eac5ecc913
+    - 4ad18efe6c9939a4c835f5c0bd8632d9
+    - 6305a6ef89dd8474097e2a617c227864
+    - 12c08fe9cd45283428265550abcdfa31
+    - 85287fee4bc278747887f0e78dc11803
+    - ccce5f9867c93b9419052ff6d6ac5022
+    - 9e9e26b0d314c8b4c965a380039b92be
+    - 6cf34ff6ae03ec3409a40e10b9c958eb
+    - 581e9fdf2a3440a408b1f908fdb1e12a
+    - f6f4a2e45163ca94f8110d72ace9dca9
+    - c3fb103cb72f95242973ede9f24d8674
+    - e2c1a9381044ad14b906b29c1336d2fc
+    - a607a83fb2f52ef4bba4411dd953f512
+    - f716ac0f988a71e418b2828657a614f3
+    - 2133729b506de47418c73c7708ca34f6
+    - d2812566750d9c240926dfcc4d389720
+    - a4ad4e67ea2e28f47a6691f48744c44d
+    - bf6ec29320af9254ba71fb9d8c1c4bcd
+    - 9ba4e21360c9b404b92d3bb9a14b5888
+    - 227b5fbccb3830246b4e438d0a9001c1
+    - 22b49a83e980f794cbf947f326c8db68
+    - 692431d8809a81a4084578fc4fed138e
+    - 46f2d2d26191564499d4f6902e23b9ec
+    - a17216d0815b4744f9de0abc3e424666
+    - b2a060a379ae70542ab5f2fc6506d29c
+    - 6afce60b4d17e7e4fa46e5725e7eb510
+    - b52ce740cda5cbb488e7c4e7f9e38db8
+    - b09ef25fc513b8b448943b106301a236
+    spriteTextureTimeStamps:
+    - 1676573784.42577
+    - 1676573784.42911
+    - 1676573784.43112
+    - 1676573784.43412
+    - 1676573784.43612
+    - 1676573784.43913
+    - 1676574423.6138
+    - 1676574423.6138
+    - 1676574423.6138
+    - 1676574423.62341
+    - 1676574423.62341
+    - 1676574423.62341
+    - 1676574196.21614
+    - 1676574196.21614
+    - 1676574694.91711
+    - 1676574694.9201
+    - 1676574694.9221
+    - 1676574694.9251
+    - 1676574694.92711
+    - 1676574694.93011
+    - 1676576171.98555
+    - 1676576171.98863
+    - 1676576171.99048
+    - 1676576171.99347
+    - 1676576171.99548
+    - 1676576171.99811
+    - 1676764963.2372
+    - 1676764963.2402
+    - 1676764963.2422
+    - 1676764963.2452
+    - 1676764963.24721
+    - 1676764963.25021
+    - 1676764963.25221
+    - 1676764963.25541
+    - 1676764963.25941
+    - 1676765722.67648
+    - 1676765722.67949
+    - 1676765722.68149
+    - 1676765722.68449
+    - 1676765722.68549
+    - 1676765722.6895
+    - 1676765722.69148
+    - 1676829894.33455
+    - 1676829114.5252
+    - 1676829114.52821
+    - 1676829114.52921
+    - 1676829125.71941
+    - 1676829125.72242
+    - 1676829125.72441
+    - 1676829225.3004
+    - 1676829225.3034
+    - 1676829225.2984
+    - 1676829894.32891
+    - 1676829894.33191
+    - 1676829906.08843
+    - 1676829906.09238
+    - 1676829906.09538
+    - 1676830080.48778
+    - 1676830080.49278
+    - 1676830080.49012
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: ItemCollection
+    spriteCollectionGUID: bb84981ef1f1c0345a015a16aa992b08
+    spriteCollectionDataGUID: d3098c798db6e4949a02380efe7ea2e9
+    spriteNames:
+    - WIP
+    - demonheart
+    - heartbreak
+    - revenant
+    spriteTextureGUIDs:
+    - 3fc3d872ed8338a4f848bf698b9ae37e
+    - a221228277602374cb609334ab6cdbe5
+    - ecade39f702e60d419d8c523e94d4864
+    - b5a64a4bcdc0777498b7b5cfad06a921
+    spriteTextureTimeStamps:
+    - 1676579503.32537
+    - 1677103187.09717
+    - 1677106660.73755
+    - 1677106667.03324
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: DanmedShrineCollection
+    spriteCollectionGUID: dfbfab3e692813e42b27b17b13827c17
+    spriteCollectionDataGUID: 5ce6ac764a1c53944ac33d6229e5e65a
+    spriteNames:
+    - damnationshrine_idle_001
+    - damnationshrine_idle_002
+    - damnationshrine_idle_003
+    - damnationshrine_idle_004
+    - damnationshrine_idle_005
+    - damnationshrine_use_001
+    - damnationshrine_use_002
+    - damnationshrine_use_003
+    - damnationshrine_use_004
+    - damnationshrine_use_005
+    - damnationshrine_use_006
+    - damnationshrine_use_007
+    spriteTextureGUIDs:
+    - a5c5a937a0728b546a50678967b76669
+    - c0fc505b9fe6518419bef7d8c1c62769
+    - 3f188f1b9fbf93f48b9e1d8f5642932f
+    - 21b112873cf348d4199438958fef1b7b
+    - 471d301307a3ef447a9472b58f462b59
+    - 707fd78430f902a4eb0167a9491326dc
+    - 2e4bc9df09389cb4f9b79588d233a9ad
+    - 44c991858791a6f42b7e126ed4ce4a66
+    - 441c64950f684d44285cea7e4ebdc350
+    - 695459244da220449aa5145597aa1e2f
+    - 59657e911c10ecf43afc5c427d2cf169
+    - 525d3e407b64f5440ac7f6cf533547ca
+    spriteTextureTimeStamps:
+    - 1677003394.53302
+    - 1677003394.53561
+    - 1677003394.53762
+    - 1677003394.53962
+    - 1677003394.54262
+    - 1677010268.08527
+    - 1677010452.10583
+    - 1677010452.10783
+    - 1677010452.10983
+    - 1677010452.11183
+    - 1677010452.11283
+    - 1677010452.11383
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
