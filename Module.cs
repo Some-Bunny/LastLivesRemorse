@@ -12,6 +12,7 @@ using SoundAPI;
 using Dungeonator;
 using Alexandria.DungeonAPI;
 using BepInEx.Configuration;
+using Alexandria.Misc;
 
 namespace LastLivesRemorse
 {
@@ -22,7 +23,7 @@ namespace LastLivesRemorse
     {
         public const string GUID = "somebunny.etg.lastlivesremorse";
         public const string NAME = "Past Lives Remorse (G.C.C 3)";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.2.1";
         public const string TEXT_COLOR = "#00FFFF";
         public void Awake()
         {
@@ -76,13 +77,31 @@ namespace LastLivesRemorse
             ConsoleMagic.LogButCool($"{NAME} v{VERSION} started successfully.  ", StaticTextures.IconTexture);
             //Log($"{NAME} v{VERSION} started successfully.", TEXT_COLOR);
             g.OnNewLevelFullyLoaded += G_OnNewLevelFullyLoaded;
+            CustomActions.OnRunStart += ORE;
 
-            ETGModConsole.Commands.AddGroup("llr", args =>
+            ETGModConsole.Commands.AddGroup("plr", args =>
             {
             });
-            ETGModConsole.Commands.GetGroup("llr").AddUnit("set_flag", ForceEnableMixedFloor);
+            ETGModConsole.Commands.GetGroup("plr").AddUnit("toggle_rage", ForceEnableMixedFloor);
 
         }
+
+        public void ORE (PlayerController p1, PlayerController p2, GameManager.GameMode g)
+        {
+            if (SaveAPI.AdvancedGameStatsManager.Instance.GetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN_NEXT_RUN) == true)
+            {
+                SaveAPI.AdvancedGameStatsManager.Instance.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN, true);
+                if (RagePersistsBetweenRuns.Value == false)
+                {
+                    SaveAPI.AdvancedGameStatsManager.Instance.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN_NEXT_RUN, false);
+                }
+            }
+            else
+            {
+                SaveAPI.AdvancedGameStatsManager.Instance.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN, false);
+            }
+        } 
+
         public static void ForceEnableMixedFloor(string[] s)
         {
             SaveAPIManager.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN_NEXT_RUN, !SaveAPIManager.GetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN_NEXT_RUN));
@@ -94,9 +113,12 @@ namespace LastLivesRemorse
         {
             ShrineWeight = config.Bind<float>("Past Lives Remorse:", "Shrine Weight", 0.1f, "(Default of 0.1f) The Chance that the shrine will appear as %.");
             ShrineSelectionChance = config.Bind<float>("Past Lives Remorse:", "Shrine Selection Chance", 0.5f, "(Default of 0.5f) The Chance that the shrine will be selected as a choice when floor is generated.");
+            RagePersistsBetweenRuns = config.Bind<bool>("Past Lives Remorse:", "Persistent Rage", false, "(Default of false) Whether the Revenant will spawn on the run after it was enraged.");
+
         }
         public static ConfigEntry<float> ShrineWeight;
         public static ConfigEntry<float> ShrineSelectionChance;
+        public static ConfigEntry<bool> RagePersistsBetweenRuns;
 
 
 
@@ -107,24 +129,16 @@ namespace LastLivesRemorse
 
         public IEnumerator DoDelay()
         {
-            
-            bool b = false;
-            if (SaveAPI.AdvancedGameStatsManager.Instance.GetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN_NEXT_RUN) == true)
-            {
-                b = !b;
-                SaveAPI.AdvancedGameStatsManager.Instance.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN, true);
-            }
-            else
-            {
-                SaveAPI.AdvancedGameStatsManager.Instance.SetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN, false);
-            }
+
+            bool aaa = false;
             Dungeon floor = GameManager.Instance.Dungeon;
             float f = 0;
-            while (f < UnityEngine.Random.Range(15, 35) && floor != null)
+            while (f < UnityEngine.Random.Range(12, 24) && floor != null)
             {
-                if (f > 5 && b == true)
+                bool b = SaveAPI.AdvancedGameStatsManager.Instance.GetFlag(CustomDungeonFlags.REVENANT_WILL_SPAWN);
+                if (f > 5 && b == true && aaa == false)
                 {
-                    b = false;
+                    aaa = !aaa;
                     GameUIRoot.Instance.notificationController.DoCustomNotification("SOMETHING RETURNS", "Revenge For Life Taken.", StaticCollections.Item_Collection, StaticCollections.Item_Collection.GetSpriteIdByName("revenant"), UINotificationController.NotificationColor.SILVER, false, false);
                 }
                 f += BraveTime.DeltaTime;

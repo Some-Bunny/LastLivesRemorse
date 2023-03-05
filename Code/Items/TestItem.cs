@@ -87,7 +87,7 @@ namespace LastLivesRemorse
                 Destroy(scorf.gameObject.GetComponent<ScarfAttachmentDoer>());
                 scorf.AttachTarget = this.gameObject;
                 scorf.AttachTransform = this.gameObject.transform;
-                scorf.ScarfMaterial = (PickupObjectDatabase.GetById(436) as BlinkPassiveItem).ScarfPrefab.ScarfMaterial;
+                scorf.ScarfMaterial = new Material((PickupObjectDatabase.GetById(436) as BlinkPassiveItem).ScarfPrefab.ScarfMaterial);
                 scorf.StartWidth = 0.1f;
                 scorf.EndWidth = 0.03f;
                 scorf.AnimationSpeed = UnityEngine.Random.Range(12, 25);
@@ -112,6 +112,7 @@ namespace LastLivesRemorse
 
         public IEnumerator SpawnSequence()
         {
+            ForceUpdateRibPosition = true;
             Vector2 l = this.gameObject.transform.position - new Vector3(0, 1);
             AkSoundEngine.PostEvent("Play_RoarSpawn", this.Body.gameObject);
             this.AIAnimator.PlayUntilFinished("spawn");
@@ -151,6 +152,7 @@ namespace LastLivesRemorse
             speculator.DoForceEndAllBehaviorTick();
             speculator.Enabled_Tick = true;
             Destroy(particleSystem.gameObject, 3);
+            ForceUpdateRibPosition = false;
             yield break;
         }
 
@@ -172,14 +174,15 @@ namespace LastLivesRemorse
 
         public void Update()
         {
-           
+           if (ForceUpdateRibPosition == true)
+           {
+                AIAnimator.ChildAnimator.gameObject.transform.position = this.AIAnimator.transform.position + new Vector3(0.125f, -0.5f);
+           }
 
       
         }
-
+        private bool ForceUpdateRibPosition = false;
     }
-
-
 
 
 

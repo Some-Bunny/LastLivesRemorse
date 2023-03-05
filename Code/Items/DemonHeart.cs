@@ -26,7 +26,7 @@ namespace LastLivesRemorse
     {
         public static ItemTemplate template = new ItemTemplate(typeof(DemonHeart))
         {
-            Name = "Forsaken Heart",
+            Name = "Forsaken Demons Heart",
             Description = "Life Taken",
             LongDescription = "The ever-warm heart of a great demon. The heat radiated off of the heart never fades, providing great strength.\n\nDo not expect this action to go unnoticed.",
             ManualSpriteCollection = StaticCollections.Item_Collection,

@@ -16,13 +16,10 @@ namespace LastLivesRemorse
                 "LastLivesRemorse/damnationroom_p.room").room;
             protoRoom.UseCustomMusicState = true;
             protoRoom.UseCustomMusicSwitch = true;
-
             protoRoom.CustomMusicSwitch = "Stop_MUS_All";
             protoRoom.CustomMusicEvent = "Stop_MUS_All";
             protoRoom.usesCustomAmbientLight = true;
             protoRoom.customAmbientLight = new Color(0.2f, 0.2f, 0.2f);
-
-
             GungeonAPI.RoomFactory.AddInjection(protoRoom,
                 "Damned_Shrine",
                 new List<Dungeonator.ProceduralFlowModifierData.FlowModifierPlacementType>()

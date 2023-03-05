@@ -1,5 +1,6 @@
 ﻿using Alexandria.EnemyAPI;
 using Brave.BulletScript;
+using Dungeonator;
 using System;
 using System.Collections;
 using System.Linq;
@@ -15,7 +16,26 @@ namespace LastLivesRemorse
         {
             if (ReturnTrackedPlayer().CurrentRoom != this.Body.transform.position.GetAbsoluteRoom()) { return false; }
             if (Vector2.Distance(this.Body.UnitCenter, ReturnTrackedPlayer().transform.PositionVector2()) < 8) { return false; }
-            return CooldownIsFull() == true;
+            bool b = false;
+            if (this.controller.transform.position.GetAbsoluteRoom() != null)
+            {
+                var currentRoom = this.controller.transform.position.GetAbsoluteRoom();
+                CellData nearestCellToPosition = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2());
+                CellData nearestCellToPosition2 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.left);
+                CellData nearestCellToPosition3 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.right);
+                CellData nearestCellToPosition4 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.up);
+                CellData nearestCellToPosition5 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.down);
+                bool flag2 = !nearestCellToPosition.isNextToWall && !nearestCellToPosition2.isNextToWall && !nearestCellToPosition3.isNextToWall && !nearestCellToPosition4.isNextToWall && !nearestCellToPosition5.isNextToWall;
+                if (!flag2)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            return CooldownIsFull() == true && b == true;
         }
 
         public override void StartBehavior()

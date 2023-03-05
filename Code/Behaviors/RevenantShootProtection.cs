@@ -1,5 +1,6 @@
 ﻿using Alexandria.EnemyAPI;
 using Brave.BulletScript;
+using Dungeonator;
 using System;
 using System.Collections;
 using System.Linq;
@@ -16,6 +17,27 @@ namespace LastLivesRemorse.Storage.Behaviors
             if (ReturnTrackedPlayer().CurrentRoom == null) { return false; }
             if (ReturnTrackedPlayer().CurrentRoom.activeEnemies == null) { return false; }
             if (ReturnTrackedPlayer().CurrentRoom.activeEnemies.Count == 0) { return false; }
+
+            if (this.controller.transform.position.GetAbsoluteRoom() != null)
+            {
+                var currentRoom  = this.controller.transform.position.GetAbsoluteRoom();
+                CellData nearestCellToPosition = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2());
+                CellData nearestCellToPosition2 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.left);
+                CellData nearestCellToPosition3 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.right);
+                CellData nearestCellToPosition4 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.up);
+                CellData nearestCellToPosition5 = currentRoom.GetNearestCellToPosition(this.controller.transform.PositionVector2() + Vector2.down);
+                bool flag2 = !nearestCellToPosition.isNextToWall && !nearestCellToPosition2.isNextToWall && !nearestCellToPosition3.isNextToWall && !nearestCellToPosition4.isNextToWall && !nearestCellToPosition5.isNextToWall;
+                if (!flag2)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+
+          
             return CooldownIsFull() == true;
         }
 
@@ -66,17 +88,16 @@ namespace LastLivesRemorse.Storage.Behaviors
                 f += BraveTime.DeltaTime;
                 yield return null;
             }
-            if (enemyToProtect != null)
+            AkSoundEngine.PostEvent("Play_Rage", this.Body.gameObject);
+            BulletScriptSource bulletScriptSource = Body.gameObject.GetOrAddComponent<BulletScriptSource>();
+            bulletScriptSource.BulletManager = Body.GetComponent<AIBulletBank>();
+            bulletScriptSource.BulletScript = new CustomBulletScriptSelector(typeof(Shot));
+            bulletScriptSource.Initialize();
+            f = 0;
+            while (f < 0.45f)
             {
-                AkSoundEngine.PostEvent("Play_Rage", this.Body.gameObject);
-                BulletScriptSource bulletScriptSource = Body.gameObject.GetOrAddComponent<BulletScriptSource>();
-                bulletScriptSource.BulletManager = Body.GetComponent<AIBulletBank>();
-                bulletScriptSource.BulletScript = new CustomBulletScriptSelector(typeof(Shot));
-                bulletScriptSource.Initialize();
-            }
-            else
-            {
-                this.FinishBehavior();
+                f += BraveTime.DeltaTime;
+                yield return null;
             }
             this.FinishBehavior();
             yield break;
@@ -87,8 +108,8 @@ namespace LastLivesRemorse.Storage.Behaviors
         {
             base.OnUpdated();
         }
-        public override float Cooldown => 25;
-        public override float CooldownVariance => 20;
+        public override float Cooldown => 22;
+        public override float CooldownVariance => 25;
 
         public override float Weight => 2;
 
